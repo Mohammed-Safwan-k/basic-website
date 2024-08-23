@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="full-page">
+      <header>
+        <div class="header-container">
+          <div class="logo">LOGO</div>
+          <div class="name">Webpage Name</div>
+          <label class="switch">
+            <input type="checkbox" id="view-toggle" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+          <div class="hamburger" id="hamburgerBtn">☰</div>
+        </nav>
+        <div class="dropdown" id="dropdownMenu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <section class="main-content">
+          <div class="left-content">
+            <div class="card">
+              <h2>Title</h2>
+              <p>Description</p>
+              <img
+                src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+                alt="Image"
+              />
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="item item1">
+              <p>Text left</p>
+              <img
+                src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+                alt="Image 1"
+              />
+            </div>
+            <div class="item item2">
+              <img
+                src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+                alt="Image 2"
+              />
+              <p>Text right</p>
+            </div>
+            <div class="item item3">
+              <p>Text left</p>
+              <img
+                src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+                alt="Image 3"
+              />
+            </div>
+            <div class="item item4">
+              <img
+                src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+                alt="Image 4"
+              />
+              <p>Text right</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Footer Content</p>
+      </footer>
+    </div>
+
+    <div class="hidden" id="mobile-phone">
+      <iframe id="mobile-view"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
